@@ -5,20 +5,20 @@ const investmentConstructor = () => {
     const investment_name = document.getElementById('inv_name').value;
     const name = document.getElementById('name').value;
     const capital = parseFloat(document.getElementById('capital').value);
-    const expences = parseFloat(document.getElementById('expences').value);
+    const expenses = parseFloat(document.getElementById('expenses').value);
     const income = parseFloat(document.getElementById('income').value);
     const debt = parseFloat(document.getElementById('debt').value);
     const interestRate = parseFloat(document.getElementById('interest_rate').value);
     const loanTerm = parseFloat(document.getElementById('loan_term').value);
 
     // Check if inputs are valid numbers
-    if (isNaN(capital) || isNaN(expences) || isNaN(income)) {
+    if (isNaN(capital) || isNaN(expenses) || isNaN(income)) {
         alert("Please enter valid numbers for capital, expenses, and income.");
         return;
     }
 
     // Create a new BusinessInvestment instance
-    const investment = new BusinessInvestment(investment_name, name, capital, expences, income, debt, interestRate, loanTerm);
+    const investment = new BusinessInvestment(investment_name, name, capital, expenses, income, debt, interestRate, loanTerm);
 
     // Calculate ROI, BEP, Profit Margin using the methods from BusinessInvestment class
     const ROI = investment.calculateROI();
