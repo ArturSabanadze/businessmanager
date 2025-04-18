@@ -1,0 +1,66 @@
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: 2rem 3rem; /* ← 3rem ≈ 48px side padding */
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    background: linear-gradient(to bottom right, #eefcff, #cdebff);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    font-family: 'Segoe UI', sans-serif;
+    box-sizing: border-box;
+  }
+  
+  .form-group {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #333;
+    font-weight: 500;
+    font-size: 1rem;
+  }
+  
+  .form-group input {
+    width: 100%; /* ← This makes the input take full width of .form-group */
+    padding: 0.75rem 1rem;
+    font-size: clamp(0.85rem, 1.2vw, 1rem);
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fafafa;
+    color: #333;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    box-sizing: border-box;
+  }
+  
+  .form-group input:focus {
+    border-color: #a3c1ff;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(163, 193, 255, 0.25);
+  }
+  
+  .login-button {
+    width: 100%; /* ← Full width like input fields */
+    padding: 0.75rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #fff;
+    background: linear-gradient(to right, #6a82fb, #56ccf2);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  .login-button:hover {
+    background: linear-gradient(to right, #5a72ea, #4bb8e8);
+    transform: translateY(-1px);
+  }
+  

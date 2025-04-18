@@ -1,3 +1,21 @@
+
+
+/* Common width for all buttons */
+button {
+  width: 100px;
+}
+
+@media (max-width: 600px) {
+  button {
+    width: 100%;
+  }
+}
+
+button:focus {
+  outline: 2px solid #007acc;
+  outline-offset: 2px;
+}
+
 /* 1. Soft Gray */
 #btn-1 {
     font-family: 'Segoe UI', sans-serif;
@@ -163,3 +181,322 @@
     background: linear-gradient(to right, #e0e0e0, #d3d3d3);
   }
   
+  /* 11. Sky Breeze */
+#btn-11 {
+  background: linear-gradient(135deg, #d0f0fd, #a6d8f0);
+  color: #2a2a2a;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 8px;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: box-shadow 0.25s ease;
+}
+#btn-11:hover {
+  box-shadow: 0 4px 10px rgba(0, 123, 255, 0.15);
+}
+
+/* 12. Lavender Dream */
+#btn-12 {
+  background: linear-gradient(to right, #e0c3fc, #8ec5fc);
+  color: #fff;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 10px;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+#btn-12:hover {
+  transform: translateY(-2px);
+}
+
+/* 13. Rose Sunset */
+#btn-13 {
+  background: linear-gradient(120deg, #fcb7af, #f6d365);
+  color: #fff;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 8px;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: opacity 0.25s ease;
+}
+#btn-13:hover {
+  opacity: 0.9;
+}
+
+/* 14. Frosty Mint */
+#btn-14 {
+  background: linear-gradient(to right, #c2f5e9, #a0eacb);
+  color: #2a2a2a;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: 'Segoe UI', sans-serif;
+  cursor: pointer;
+  transition: box-shadow 0.25s ease;
+}
+#btn-14:hover {
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 15. Neon Grape */
+#btn-15 {
+  background: linear-gradient(to right, #b621fe, #1fd1f9);
+  color: white;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: 'Segoe UI', sans-serif;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+#btn-15:hover {
+  transform: scale(1.03);
+}
+
+/* 16. Coral Punch */
+#btn-16 {
+  background: linear-gradient(135deg, #ff7e5f, #feb47b);
+  color: #fff;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 6px;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: box-shadow 0.25s ease;
+}
+#btn-16:hover {
+  box-shadow: 0 3px 8px rgba(255, 126, 95, 0.25);
+}
+
+/* 17. Ocean Mist */
+#btn-17 {
+  background: linear-gradient(to right, #a1c4fd, #c2e9fb);
+  color: #2f2f2f;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 6px;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+#btn-17:hover {
+  opacity: 0.85;
+}
+
+/* 18. Elegant Night */
+#btn-18 {
+  background: linear-gradient(to right, #434343, #000000);
+  color: #fff;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.25s ease;
+}
+#btn-18:hover {
+  background: linear-gradient(to right, #2e2e2e, #000000);
+}
+
+/* 19. Candy Pink */
+#btn-19 {
+  background: linear-gradient(to right, #ff9a9e, #fad0c4);
+  color: white;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: 'Segoe UI', sans-serif;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+#btn-19:hover {
+  transform: scale(1.04);
+}
+
+/* 20. Midnight Aqua */
+#btn-20 {
+  background: linear-gradient(to right, #005c97, #363795);
+  color: white;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 8px;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: box-shadow 0.25s ease;
+}
+#btn-20:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#btn-21 {
+  background: linear-gradient(to right, #ffd700, #ffea8a);
+  color: #3a3a3a;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 8px;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: box-shadow 0.25s ease;
+}
+#btn-21:hover {
+  box-shadow: 0 4px 12px rgba(255, 215, 0, 0.3);
+}
+
+#btn-22 {
+  background-color: #1e1e2f;
+  color: #c4c4ff;
+  border: 1px solid #343454;
+  padding: 0.7rem 1.5rem;
+  border-radius: 8px;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 0 0px rgba(100, 100, 255, 0.4);
+  transition: box-shadow 0.3s ease;
+}
+#btn-22:hover {
+  box-shadow: 0 0 12px rgba(100, 100, 255, 0.6);
+}
+
+
+#btn-23 {
+  background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+  color: #3c3c3c;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 20px;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+#btn-23:hover {
+  opacity: 0.9;
+}
+
+#btn-24 {
+  background-color: #b8c2a7;
+  color: #2e2e2e;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 5px;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+}
+#btn-24:hover {
+  background-color: #a0ae8c;
+}
+
+#btn-25 {
+  background-color: #f0f0f0;
+  color: #1a1a1a;
+  border: 2px solid #1a1a1a;
+  padding: 0.7rem 1.5rem;
+  border-radius: 4px;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+#btn-25:hover {
+  background-color: #1a1a1a;
+  color: #f0f0f0;
+}
+
+#btn-26 {
+  background: linear-gradient(to right, #ff6a00, #ee0979);
+  color: #fff;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 6px;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+#btn-26:hover {
+  transform: scale(1.04);
+}
+
+#btn-27 {
+  background-color: #4b0082;
+  color: #ffffff;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 999px;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+#btn-27:hover {
+  background-color: #5e0bbf;
+}
+
+
+#btn-28 {
+  background: linear-gradient(60deg, #ff9a9e, #fad0c4, #fad0c4);
+  color: #2c2c2c;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 12px;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: box-shadow 0.25s ease;
+}
+#btn-28:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#btn-29 {
+  background-color: #f4e3c1;
+  color: #4a3f35;
+  border: 1px solid #d1bfa3;
+  padding: 0.7rem 1.5rem;
+  border-radius: 6px;
+  font-family: 'Georgia', serif;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+#btn-29:hover {
+  background-color: #e6d2b5;
+}
+
+#btn-30 {
+  background: linear-gradient(90deg, #ff6ec4, #7873f5, #4ade80, #facc15);
+  background-size: 400% 400%;
+  color: white;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 10px;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  animation: rainbowShift 8s ease infinite;
+}
+@keyframes rainbowShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
