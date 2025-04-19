@@ -13,6 +13,7 @@ const handleClick = () => {
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <Accordion title="All Button Styles">
     <div className='button-container'><br />
     <Button id="btn-1" label="btn-1" onClick={() => handleClick()} />
     <Button id="btn-2" label="btn-2" onClick={() => handleClick()} />
@@ -49,19 +50,20 @@ root.render(
     <Button id="btn-31" label="btn-31" onClick={() => handleClick()} />
     <Button id="btn-32" label="btn-32" onClick={() => handleClick()} />
     </div>
+    </Accordion>
 
     <Accordion title="All Login Styles">
     <div className='login-form-container'>
-      <LoginForm cssID='1' onSubmit={() => handleClick()} buttonText = 'Login1'/>
-      <LoginForm cssID='2' buttonText = 'Login2'/>
-      <LoginForm cssID='3' buttonText = 'Login3'/>
-      <LoginForm cssID='4' buttonText = 'Login4'/>
-      <LoginForm cssID='5' buttonText = 'Login5'/>
-      <LoginForm cssID='6' buttonText = 'Login6'/>
-      <LoginForm cssID='7' buttonText = 'Login7'/>
-      <LoginForm cssID='8' buttonText = 'Login8'/>
-      <LoginForm cssID='9' buttonText = 'Login9'/>
-      <LoginForm cssID='10' buttonText = 'Login10'/>
+      <LoginForm cssID='1' onSubmit={() => handleClick()} buttonText = 'Login ID1'/>
+      <LoginForm cssID='2' buttonText = 'Login ID2'/>
+      <LoginForm cssID='3' buttonText = 'Login ID3'/>
+      <LoginForm cssID='4' buttonText = 'Login ID4'/>
+      <LoginForm cssID='5' buttonText = 'Login ID5'/>
+      <LoginForm cssID='6' buttonText = 'Login ID6'/>
+      <LoginForm cssID='7' buttonText = 'Login ID7'/>
+      <LoginForm cssID='8' buttonText = 'Login ID8'/>
+      <LoginForm cssID='9' buttonText = 'Login ID9'/>
+      <LoginForm cssID='10' buttonText = 'Login ID10'/>
     </div>
     </Accordion>
     
