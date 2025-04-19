@@ -21,12 +21,19 @@ code {
   margin: 5rem 5rem 0 5rem;
 }
 
-login-form-container {
+.login-form-container {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap; /* Allows wrapping to next line */
   justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100vh;
+  align-items: flex-start; /* Top-aligned rows */
+  gap: 2rem; /* Spacing between forms */
+  padding: 2rem;
   background-color: #f0f4f8;
+  box-sizing: border-box;
+}
+
+.login-form-container > * {
+  flex: 1 1 calc(25% - 2rem); /* Max 4 per row */
+  max-width: calc(25% - 2rem);
+  min-width: 280px; /* Prevent too small on narrow screens */
 }

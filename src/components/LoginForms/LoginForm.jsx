@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
-import PropTypes from 'prop-types';
-import './LoginForm1.css'; // Add your styles here
+import './LoginForm.css'; // Add your styles here
 
-const LoginForm1 = ({ onSubmit, buttonText = 'Login', errorMessage }) => {
+
+const LoginForm = ( {cssID, onSubmit, buttonText = 'Login', errorMessage} ) => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const cssIDhandler = () => cssID || '1';
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -14,23 +15,25 @@ const LoginForm1 = ({ onSubmit, buttonText = 'Login', errorMessage }) => {
     };
 
     return (
-        <form className="login-form" onSubmit={handleSubmit}>
-            <div className="form-group">
-                <label htmlFor="email">Email</label>
+        <form id={"login-form-"+cssIDhandler()} onSubmit={handleSubmit}>
+            <div id={"form-group-"+cssIDhandler()}>
+                <label htmlFor="login1-email">Email</label>
                 <input
                     type="email"
-                    id="email"
+                    autoComplete="username"
+                    id="login1-email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     placeholder="Enter your email"
                     required
                 />
             </div>
-            <div className="form-group">
-                <label htmlFor="password">Password</label>
+            <div id= {"form-group-"+cssIDhandler()}>
+                <label htmlFor="login-password-1">Password</label>
                 <input
                     type="password"
-                    id="password"
+                    autoComplete="current-password"
+                    id="login-password-1"
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
                     placeholder="Enter your password"
@@ -38,17 +41,10 @@ const LoginForm1 = ({ onSubmit, buttonText = 'Login', errorMessage }) => {
                 />
             </div>
             {errorMessage && <p className="error-message">{errorMessage}</p>}
-            <button type="submit" className="login-button">
+            <button type="submit" id={"login-button-"+cssIDhandler()}>
                 {buttonText}
             </button>
         </form>
     );
 };
-
-LoginForm1.propTypes = {
-    onSubmit: PropTypes.func.isRequired,
-    buttonText: PropTypes.string,
-    errorMessage: PropTypes.string,
-};
-
-export default LoginForm1;
+export default LoginForm;

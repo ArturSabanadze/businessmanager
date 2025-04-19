@@ -2,8 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import Button from './components/Button';
-import LoginForm1 from './components/LoginForms/LoginForm1/LoginForm1';
-import LoginForm2 from './components/LoginForms/LoginForm2/LoginForm2';
+import LoginForm from './components/LoginForms/LoginForm';
+import Accordion from './components/Accordion/Accordion';
 
 const handleClick = () => {
   alert('You clicked ');
@@ -23,7 +23,7 @@ root.render(
     <Button id="btn-7" label="btn-7" onClick={() => handleClick()} />
     <Button id="btn-8" label="btn-8" onClick={() => handleClick()} />
     <Button id="btn-9" label="btn-9" onClick={() => handleClick()} />
-    <Button id="btn-10" label="btn-10" onClick={() => handleClick()} /><br /><br />
+    <Button id="btn-10" label="btn-10" onClick={() => handleClick()} />
 
     <Button id="btn-11" label="btn-11" onClick={() => handleClick()} />
     <Button id="btn-12" label="btn-12" onClick={() => handleClick()} />
@@ -50,9 +50,20 @@ root.render(
     <Button id="btn-32" label="btn-32" onClick={() => handleClick()} />
     </div>
 
+    <Accordion title="All Login Styles">
     <div className='login-form-container'>
-      <LoginForm1 onSubmit={() => handleClick()}> </LoginForm1>
-      <LoginForm2 onSubmit={() => handleClick()}> </LoginForm2>
+      <LoginForm cssID='1' onSubmit={() => handleClick()} buttonText = 'Login1'/>
+      <LoginForm cssID='2' buttonText = 'Login2'/>
+      <LoginForm cssID='3' buttonText = 'Login3'/>
+      <LoginForm cssID='4' buttonText = 'Login4'/>
+      <LoginForm cssID='5' buttonText = 'Login5'/>
+      <LoginForm cssID='6' buttonText = 'Login6'/>
+      <LoginForm cssID='7' buttonText = 'Login7'/>
+      <LoginForm cssID='8' buttonText = 'Login8'/>
+      <LoginForm cssID='9' buttonText = 'Login9'/>
+      <LoginForm cssID='10' buttonText = 'Login10'/>
     </div>
+    </Accordion>
+    
   </React.StrictMode>
 );
