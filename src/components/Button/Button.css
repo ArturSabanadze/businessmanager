@@ -1,8 +1,18 @@
 
 
-/* Common width for all buttons */
+/* Common button styles */
 button {
   width: 100px;
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  font-family: 'Segoe UI', sans-serif;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  background-color: #f0f0f0;
+  color: #333;
+  border: 1px solid #d1d1d1;
 }
 
 @media (max-width: 600px) {
@@ -16,175 +26,90 @@ button:focus {
   outline-offset: 2px;
 }
 
-/* 1. Soft Gray */
+/* Button Variants */
 #btn-1 {
-    font-family: 'Segoe UI', sans-serif;
-    padding: 0.7rem 1.5rem;
-    font-size: 1rem;
-    border: 1px solid #ccc;
-    background-color: #f5f5f5;
-    color: #333;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: all 0.25s ease;
-  }
-  #btn-1:hover {
-    background-color: #e6e6e6;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
-  }
+  background-color: #f0f0f0;
+}
+#btn-1:hover {
+  background-color: #e4e4e4;
+}
+
+#btn-2 {
+  background-color: #e0e0e0;
+}
+#btn-2:hover {
+  background-color: #d5d5d5;
+}
+
+#btn-3 {
+  background-color: #f9f9f9;
+  border: 1px solid #cfcfcf;
+}
+#btn-3:hover {
+  background-color: #ececec;
+  transform: translateY(-1px);
+}
+
+#btn-4 {
+  background-color: #dcdcdc;
+  border: 1px solid #bcbcbc;
+}
+#btn-4:hover {
+  background-color: #cfcfcf;
+}
+
+#btn-5 {
+  background-color: #ededed;
+}
+#btn-5:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+#btn-6 {
+  background-color: white;
+  border: 1.5px solid #e0e0e0;
+}
+#btn-6:hover {
+  background-color: #f7f7f7;
+  border-color: #d4d4d4;
+}
+
+#btn-7 {
+  background-color: #eaeaea;
+}
+#btn-7:hover {
+  background-color: #d8d8d8;
+}
+
+#btn-8 {
+  background-color: transparent;
+  border: 1.5px solid #888;
+  color: #444;
+}
+#btn-8:hover {
+  background-color: #888;
+  color: white;
+}
+
+#btn-9 {
+  background-color: #fdfdfd;
+}
+#btn-9:hover {
+  background-color: #f2f2f2;
+}
+
+#btn-10 {
+  background: linear-gradient(to right, #f5f5f5, #eaeaea);
+}
+#btn-10:hover {
+  background: linear-gradient(to right, #e0e0e0, #d5d5d5);
+}
+
   
-  /* 2. Charcoal Dark */
-  #btn-2 {
-    background-color: #2f2f2f;
-    color: #f1f1f1;
-    border: none;
-    padding: 0.7rem 1.5rem;
-    font-size: 1rem;
-    border-radius: 6px;
-    cursor: pointer;
-    font-family: 'Segoe UI', sans-serif;
-    transition: background 0.25s ease;
-  }
-  #btn-2:hover {
-    background-color: #1f1f1f;
-  }
-  
-  /* 3. Cool Ash Border */
-  #btn-3 {
-    background-color: white;
-    color: #444;
-    border: 1.5px solid #dcdcdc;
-    padding: 0.7rem 1.5rem;
-    font-size: 1rem;
-    border-radius: 8px;
-    font-family: 'Segoe UI', sans-serif;
-    cursor: pointer;
-    transition: all 0.2s ease-in-out;
-  }
-  #btn-3:hover {
-    background-color: #f9f9f9;
-    transform: translateY(-1px);
-  }
-  
-  /* 4. Navy Flat */
-  #btn-4 {
-    background-color: #2c3e50;
-    color: white;
-    border: none;
-    padding: 0.7rem 1.5rem;
-    font-size: 1rem;
-    border-radius: 6px;
-    font-family: 'Segoe UI', sans-serif;
-    cursor: pointer;
-    transition: background 0.2s ease;
-  }
-  #btn-4:hover {
-    background-color: #1f2a38;
-  }
-  
-  /* 5. Subtle Shadow */
-  #btn-5 {
-    background-color: #f9f9f9;
-    color: #333;
-    padding: 0.7rem 1.5rem;
-    border: none;
-    border-radius: 6px;
-    font-family: 'Segoe UI', sans-serif;
-    font-size: 1rem;
-    cursor: pointer;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-    transition: box-shadow 0.2s ease;
-  }
-  #btn-5:hover {
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  }
-  
-  /* 6. Minimal White */
-  #btn-6 {
-    background-color: #ffffff;
-    color: #222;
-    border: 2px solid #ececec;
-    padding: 0.7rem 1.5rem;
-    border-radius: 6px;
-    font-family: 'Segoe UI', sans-serif;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: all 0.25s ease;
-  }
-  #btn-6:hover {
-    border-color: #d6d6d6;
-    background-color: #fafafa;
-  }
-  
-  /* 7. Steel Blue Tint */
-  #btn-7 {
-    background-color: #445d75;
-    color: white;
-    border: none;
-    padding: 0.7rem 1.5rem;
-    border-radius: 6px;
-    font-size: 1rem;
-    font-family: 'Segoe UI', sans-serif;
-    cursor: pointer;
-    transition: background 0.25s ease;
-  }
-  #btn-7:hover {
-    background-color: #3a4e61;
-  }
-  
-  /* 8. Slate Outline */
-  #btn-8 {
-    background-color: transparent;
-    color: #5c5c5c;
-    border: 1.5px solid #5c5c5c;
-    padding: 0.7rem 1.5rem;
-    border-radius: 6px;
-    font-family: 'Segoe UI', sans-serif;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: all 0.2s ease;
-  }
-  #btn-8:hover {
-    background-color: #5c5c5c;
-    color: white;
-  }
-  
-  /* 9. Ivory Cream */
-  #btn-9 {
-    background-color: #fdfdfb;
-    color: #333;
-    border: 1px solid #ddd;
-    padding: 0.7rem 1.5rem;
-    border-radius: 6px;
-    font-family: 'Segoe UI', sans-serif;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.25s ease;
-  }
-  #btn-9:hover {
-    background-color: #f0f0ed;
-  }
-  
-  /* 10. Soft Fade Button */
-  #btn-10 {
-    background: linear-gradient(to right, #f8f9fa, #e9ecef);
-    color: #333;
-    border: 1px solid #dcdcdc;
-    padding: 0.7rem 1.5rem;
-    border-radius: 6px;
-    font-size: 1rem;
-    font-family: 'Segoe UI', sans-serif;
-    cursor: pointer;
-    transition: all 0.25s ease;
-  }
-  #btn-10:hover {
-    background: linear-gradient(to right, #e0e0e0, #d3d3d3);
-  }
-  
-  /* 11. Sky Breeze */
+ /* 11. Arctic Glow */
 #btn-11 {
-  background: linear-gradient(135deg, #d0f0fd, #a6d8f0);
-  color: #2a2a2a;
+  background: linear-gradient(135deg, #e0f7fa, #b2ebf2);
+  color: #1e3a5f;
   border: none;
   padding: 0.7rem 1.5rem;
   border-radius: 8px;
@@ -194,13 +119,13 @@ button:focus {
   transition: box-shadow 0.25s ease;
 }
 #btn-11:hover {
-  box-shadow: 0 4px 10px rgba(0, 123, 255, 0.15);
+  box-shadow: 0 4px 12px rgba(30, 58, 95, 0.15);
 }
 
-/* 12. Lavender Dream */
+/* 12. Blueberry Frost */
 #btn-12 {
-  background: linear-gradient(to right, #e0c3fc, #8ec5fc);
-  color: #fff;
+  background: linear-gradient(to right, #d6f3ff, #a3d5ff);
+  color: #224466;
   border: none;
   padding: 0.7rem 1.5rem;
   border-radius: 10px;
@@ -213,10 +138,10 @@ button:focus {
   transform: translateY(-2px);
 }
 
-/* 13. Rose Sunset */
+/* 13. Morning Haze */
 #btn-13 {
-  background: linear-gradient(120deg, #fcb7af, #f6d365);
-  color: #fff;
+  background: linear-gradient(120deg, #cdeffd, #d8f0ff);
+  color: #1c2e3f;
   border: none;
   padding: 0.7rem 1.5rem;
   border-radius: 8px;
@@ -226,13 +151,13 @@ button:focus {
   transition: opacity 0.25s ease;
 }
 #btn-13:hover {
-  opacity: 0.9;
+  opacity: 0.88;
 }
 
-/* 14. Frosty Mint */
+/* 14. Misty Blue */
 #btn-14 {
-  background: linear-gradient(to right, #c2f5e9, #a0eacb);
-  color: #2a2a2a;
+  background: linear-gradient(to right, #d3f0f7, #b6e3ec);
+  color: #253a4d;
   border: none;
   padding: 0.7rem 1.5rem;
   border-radius: 6px;
@@ -245,10 +170,10 @@ button:focus {
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* 15. Neon Grape */
+/* 15. Ice River */
 #btn-15 {
-  background: linear-gradient(to right, #b621fe, #1fd1f9);
-  color: white;
+  background: linear-gradient(to right, #aee9f8, #9bd0f5);
+  color: #003344;
   border: none;
   padding: 0.7rem 1.5rem;
   border-radius: 6px;
@@ -261,10 +186,10 @@ button:focus {
   transform: scale(1.03);
 }
 
-/* 16. Coral Punch */
+/* 16. Polar Sky */
 #btn-16 {
-  background: linear-gradient(135deg, #ff7e5f, #feb47b);
-  color: #fff;
+  background: linear-gradient(135deg, #bce5ff, #92caff);
+  color: #112233;
   border: none;
   padding: 0.7rem 1.5rem;
   border-radius: 6px;
@@ -274,13 +199,13 @@ button:focus {
   transition: box-shadow 0.25s ease;
 }
 #btn-16:hover {
-  box-shadow: 0 3px 8px rgba(255, 126, 95, 0.25);
+  box-shadow: 0 3px 8px rgba(146, 202, 255, 0.3);
 }
 
-/* 17. Ocean Mist */
+/* 17. Cloud Drift */
 #btn-17 {
-  background: linear-gradient(to right, #a1c4fd, #c2e9fb);
-  color: #2f2f2f;
+  background: linear-gradient(to right, #d7f6ff, #b8e9ff);
+  color: #1e2f3d;
   border: none;
   padding: 0.7rem 1.5rem;
   border-radius: 6px;
@@ -293,9 +218,9 @@ button:focus {
   opacity: 0.85;
 }
 
-/* 18. Elegant Night */
+/* 18. Glacier Depth */
 #btn-18 {
-  background: linear-gradient(to right, #434343, #000000);
+  background: linear-gradient(to right, #a3c9e2, #84b6d6);
   color: #fff;
   padding: 0.7rem 1.5rem;
   border: none;
@@ -306,13 +231,13 @@ button:focus {
   transition: background 0.25s ease;
 }
 #btn-18:hover {
-  background: linear-gradient(to right, #2e2e2e, #000000);
+  background: linear-gradient(to right, #84b6d6, #6fa8cc);
 }
 
-/* 19. Candy Pink */
+/* 19. Azure Cream */
 #btn-19 {
-  background: linear-gradient(to right, #ff9a9e, #fad0c4);
-  color: white;
+  background: linear-gradient(to right, #e3f4ff, #c8e7ff);
+  color: #224455;
   border: none;
   padding: 0.7rem 1.5rem;
   border-radius: 8px;
@@ -325,10 +250,10 @@ button:focus {
   transform: scale(1.04);
 }
 
-/* 20. Midnight Aqua */
+/* 20. Nordic Mist */
 #btn-20 {
-  background: linear-gradient(to right, #005c97, #363795);
-  color: white;
+  background: linear-gradient(to right, #d9f3fc, #c1e4f4);
+  color: #2a2a2a;
   border: none;
   padding: 0.7rem 1.5rem;
   border-radius: 8px;
@@ -338,92 +263,77 @@ button:focus {
   transition: box-shadow 0.25s ease;
 }
 #btn-20:hover {
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
 }
 
+/* 21. Sunrise Glow */
 #btn-21 {
-  background: linear-gradient(to right, #ffd700, #ffea8a);
-  color: #3a3a3a;
+  background: linear-gradient(to right, #ffe0b2, #ffcc80);
+  color: #5e3c00;
   border: none;
   padding: 0.7rem 1.5rem;
   border-radius: 8px;
   font-family: 'Segoe UI', sans-serif;
   font-size: 1rem;
-  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+#btn-21:hover {
+  background: linear-gradient(to right, #ffd699, #ffc266);
+}
+
+/* 22. Amber Light */
+#btn-22 {
+  background: linear-gradient(135deg, #ffd8a8, #ffc078);
+  color: #442b00;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 10px;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+#btn-22:hover {
+  transform: scale(1.03);
+}
+
+/* 23. Apricot Mist */
+#btn-23 {
+  background: linear-gradient(to right, #ffe6cc, #ffd1a3);
+  color: #4d2e00;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 8px;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 1rem;
   cursor: pointer;
   transition: box-shadow 0.25s ease;
 }
-#btn-21:hover {
-  box-shadow: 0 4px 12px rgba(255, 215, 0, 0.3);
+#btn-23:hover {
+  box-shadow: 0 4px 10px rgba(255, 174, 92, 0.25);
 }
 
-#btn-22 {
-  background-color: #1e1e2f;
-  color: #c4c4ff;
-  border: 1px solid #343454;
-  padding: 0.7rem 1.5rem;
-  border-radius: 8px;
-  font-family: 'Segoe UI', sans-serif;
-  font-size: 1rem;
-  cursor: pointer;
-  box-shadow: 0 0 0px rgba(100, 100, 255, 0.4);
-  transition: box-shadow 0.3s ease;
-}
-#btn-22:hover {
-  box-shadow: 0 0 12px rgba(100, 100, 255, 0.6);
-}
-
-
-#btn-23 {
-  background: linear-gradient(to right, #fbc2eb, #a6c1ee);
-  color: #3c3c3c;
+/* 24. Soft Tangerine */
+#btn-24 {
+  background: linear-gradient(to right, #ffd9b3, #ffb974);
+  color: #5c3600;
   border: none;
   padding: 0.7rem 1.5rem;
-  border-radius: 20px;
+  border-radius: 6px;
   font-family: 'Segoe UI', sans-serif;
   font-size: 1rem;
   cursor: pointer;
   transition: opacity 0.2s ease;
 }
-#btn-23:hover {
-  opacity: 0.9;
-}
-
-#btn-24 {
-  background-color: #b8c2a7;
-  color: #2e2e2e;
-  border: none;
-  padding: 0.7rem 1.5rem;
-  border-radius: 5px;
-  font-family: 'Segoe UI', sans-serif;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background-color 0.25s ease;
-}
 #btn-24:hover {
-  background-color: #a0ae8c;
+  opacity: 0.88;
 }
 
+/* 25. Citrus Cream */
 #btn-25 {
-  background-color: #f0f0f0;
-  color: #1a1a1a;
-  border: 2px solid #1a1a1a;
-  padding: 0.7rem 1.5rem;
-  border-radius: 4px;
-  font-family: 'Segoe UI', sans-serif;
-  font-size: 1rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
-}
-#btn-25:hover {
-  background-color: #1a1a1a;
-  color: #f0f0f0;
-}
-
-#btn-26 {
-  background: linear-gradient(to right, #ff6a00, #ee0979);
-  color: #fff;
+  background: linear-gradient(to right, #ffe4c4, #ffcfa1);
+  color: #553300;
   border: none;
   padding: 0.7rem 1.5rem;
   border-radius: 6px;
@@ -432,71 +342,249 @@ button:focus {
   cursor: pointer;
   transition: transform 0.2s ease;
 }
-#btn-26:hover {
-  transform: scale(1.04);
+#btn-25:hover {
+  transform: translateY(-2px);
 }
 
-#btn-27 {
-  background-color: #4b0082;
-  color: #ffffff;
+/* 26. Golden Haze */
+#btn-26 {
+  background: linear-gradient(120deg, #ffd1a1, #ffba75);
+  color: #472900;
   border: none;
   padding: 0.7rem 1.5rem;
-  border-radius: 999px;
-  font-family: 'Segoe UI', sans-serif;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background-color 0.2s ease;
-}
-#btn-27:hover {
-  background-color: #5e0bbf;
-}
-
-
-#btn-28 {
-  background: linear-gradient(60deg, #ff9a9e, #fad0c4, #fad0c4);
-  color: #2c2c2c;
-  padding: 0.7rem 1.5rem;
-  border: none;
-  border-radius: 12px;
+  border-radius: 8px;
   font-family: 'Segoe UI', sans-serif;
   font-size: 1rem;
   cursor: pointer;
   transition: box-shadow 0.25s ease;
 }
-#btn-28:hover {
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+#btn-26:hover {
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);
 }
 
-#btn-29 {
-  background-color: #f4e3c1;
-  color: #4a3f35;
-  border: 1px solid #d1bfa3;
+/* 27. Autumn Peach */
+#btn-27 {
+  background: linear-gradient(to right, #ffe1c6, #ffc49c);
+  color: #3d2800;
+  border: none;
   padding: 0.7rem 1.5rem;
-  border-radius: 6px;
-  font-family: 'Georgia', serif;
+  border-radius: 8px;
+  font-family: 'Segoe UI', sans-serif;
   font-size: 1rem;
   cursor: pointer;
-  transition: background-color 0.2s ease;
+  transition: background 0.25s ease;
 }
-#btn-29:hover {
-  background-color: #e6d2b5;
+#btn-27:hover {
+  background: linear-gradient(to right, #ffd4b0, #ffb478);
 }
 
-#btn-30 {
-  background: linear-gradient(90deg, #ff6ec4, #7873f5, #4ade80, #facc15);
-  background-size: 400% 400%;
-  color: white;
+/* 28. Creamy Sunset */
+#btn-28 {
+  background: linear-gradient(to right, #fff2e0, #ffdfc2);
+  color: #4a2c00;
   border: none;
   padding: 0.7rem 1.5rem;
   border-radius: 10px;
   font-family: 'Segoe UI', sans-serif;
   font-size: 1rem;
   cursor: pointer;
-  animation: rainbowShift 8s ease infinite;
+  transition: transform 0.2s ease;
 }
-@keyframes rainbowShift {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+#btn-28:hover {
+  transform: scale(1.05);
+}
+
+/* 29. Warm Dust */
+#btn-29 {
+  background: linear-gradient(to right, #ffe6c6, #ffd0a3);
+  color: #382100;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 8px;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: box-shadow 0.25s ease;
+}
+#btn-29:hover {
+  box-shadow: 0 2px 8px rgba(255, 153, 51, 0.25);
+}
+
+/* 30. Coral Light */
+#btn-30 {
+  background: linear-gradient(135deg, #ffd5b5, #ffb88c);
+  color: #3c2a00;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 10px;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+#btn-30:hover {
+  background: linear-gradient(135deg, #ffcda4, #ffa86a);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 31. Mint Frost */
+#btn-31 {
+  background: linear-gradient(to right, #d4fcd2, #b6eeb3);
+  color: #244c2e;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 10px;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+#btn-31:hover {
+  background: linear-gradient(to right, #c8f7c4, #a7e5a1);
+}
+
+/* 32. Light Sage */
+#btn-32 {
+  background: linear-gradient(135deg, #e0f8e3, #c5eacb);
+  color: #2d4c30;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 8px;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+#btn-32:hover {
+  transform: scale(1.03);
+}
+
+/* 33. Herbal Mist */
+#btn-33 {
+  background: linear-gradient(to right, #d7f5d8, #b9dfb9);
+  color: #2a422c;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 6px;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: box-shadow 0.25s ease;
+}
+#btn-33:hover {
+  box-shadow: 0 4px 10px rgba(0, 128, 0, 0.15);
+}
+
+/* 34. Pistachio Smoothie */
+#btn-34 {
+  background: linear-gradient(to right, #e6fcd9, #c3f2b6);
+  color: #305c33;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 10px;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+#btn-34:hover {
+  opacity: 0.9;
+}
+
+/* 35. Morning Leaf */
+#btn-35 {
+  background: linear-gradient(to right, #d3f8dc, #b1e2ba);
+  color: #2c4c2e;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 8px;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+#btn-35:hover {
+  transform: translateY(-2px);
+}
+
+/* 36. Dewy Green */
+#btn-36 {
+  background: linear-gradient(to right, #d9fdd9, #a9e8a9);
+  color: #245d28;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 6px;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: box-shadow 0.2s ease;
+}
+#btn-36:hover {
+  box-shadow: 0 2px 6px rgba(34, 139, 34, 0.2);
+}
+
+/* 37. Calm Meadow */
+#btn-37 {
+  background: linear-gradient(to right, #e1ffe6, #c3f5cb);
+  color: #305b32;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 8px;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.25s ease;
+}
+#btn-37:hover {
+  background: linear-gradient(to right, #d4f9db, #aeeeb4);
+}
+
+/* 38. Bamboo Glow */
+#btn-38 {
+  background: linear-gradient(to right, #ddfadd, #b8eeb8);
+  color: #294929;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 10px;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+#btn-38:hover {
+  transform: scale(1.05);
+}
+
+/* 39. Soft Olive */
+#btn-39 {
+  background: linear-gradient(to right, #f1ffe9, #d2f2c9);
+  color: #3a4f2d;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 6px;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: box-shadow 0.25s ease;
+}
+#btn-39:hover {
+  box-shadow: 0 3px 8px rgba(0, 100, 0, 0.15);
+}
+
+/* 40. Garden Tea */
+#btn-40 {
+  background: linear-gradient(135deg, #dcfddc, #b4ebb4);
+  color: #2b4c2b;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 10px;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+#btn-40:hover {
+  background: linear-gradient(135deg, #cef6ce, #a2e1a2);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
 }
 

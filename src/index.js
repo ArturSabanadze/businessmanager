@@ -47,8 +47,19 @@ root.render(
     <Button id="btn-28" label="btn-28" onClick={() => handleClick()} />
     <Button id="btn-29" label="btn-29" onClick={() => handleClick()} />
     <Button id="btn-30" label="btn-30" onClick={() => handleClick()} />
+
     <Button id="btn-31" label="btn-31" onClick={() => handleClick()} />
     <Button id="btn-32" label="btn-32" onClick={() => handleClick()} />
+    <Button id="btn-33" label="btn-33" onClick={() => handleClick()} />
+    <Button id="btn-34" label="btn-34" onClick={() => handleClick()} />
+    <Button id="btn-35" label="btn-35" onClick={() => handleClick()} />
+    <Button id="btn-36" label="btn-36" onClick={() => handleClick()} />
+    <Button id="btn-37" label="btn-37" onClick={() => handleClick()} />
+    <Button id="btn-38" label="btn-38" onClick={() => handleClick()} />
+    <Button id="btn-39" label="btn-39" onClick={() => handleClick()} />
+    <Button id="btn-40" label="btn-40" onClick={() => handleClick()} />
+    
+    
     </div>
     </Accordion>
 
